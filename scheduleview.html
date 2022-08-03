@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+
+  <table border="1" align="center">
+      <thead>
+          
+       <tr>
+         <th>Packet Id</th>
+         <th>Packet Type</th>
+         <th>Packet Content</th>
+         <th>Calories</th>
+         <th>Expiry Date</th>
+         <th>Quantity in liters</th>
+        
+      </thead>
+      {% for row in data %}
+
+           
+       
+           <td> {{row.packet_id}} </td>
+             
+           <td>{{ row.packet_type }} </td>
+
+           <td> {{ row.packet_content }} </td>
+           
+           <td> {{row.calories}} </td>
+            
+           <td> {{row.exp_date}} </td>
+           
+           <td> {{row.qty_ltr}} </td>
+        
+                    
+           </tr>
+          {% endfor %} 
+   </table>   
+     <center> <a href="/home">Back</a></td><center>
+             
+</body>
+</html>
